@@ -1,0 +1,39 @@
+.header-logo{
+	float: left;
+	padding-right: 15px;
+}
+.header-content{
+	border-bottom: 2px solid #DA7434;
+    padding-bottom: 5px;
+    display: inline-block;
+    width: 100%;
+}
+
+.header-branding-logo{
+	max-width: 120px;
+}
+
+.header-branding{
+	padding-top: 14px;
+	font-size: 16;
+	font-weight: bolder;
+	text-transform: uppercase;
+	display: inline-block;
+}
+
+.header-branding span.second{
+	display: block;
+}
+.header-info{
+	display: inline-block;
+	padding-top: 11px;
+	color :#D97434;
+	float: right;
+}
+.header-info-phone span{
+	font-size: 20px;
+	padding: 5px;
+}
+.header-info-email span{
+font-size: 18px;
+}
