@@ -1,6 +1,6 @@
 var cmg = {
 	locationScript : (function(changeBody,homePage){
-		var sp ={
+		var sp = {
 			prevLocation : location.href,
 			changeBody : changeBody,
 			hashName : location.hash.substring(1),	
@@ -18,9 +18,14 @@ var cmg = {
 			  			}
 			  		});
 				}		
+			},
+			home : function(){
+				$("<a href='#'></a>")[0].click();
 			}
 		};
+	sp.home();
 	$(window).bind('hashchange', sp.locationChange);
+	
 	return sp;
-	})("cmgbody","empresa")
+	})("cmgbody","home")
 };

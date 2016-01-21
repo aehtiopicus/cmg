@@ -1,0 +1,25 @@
+        .cmgCar {
+            position: absolute;
+            display: block !important;
+        }
+        .cmgCar div, .cmgCar div:hover, .cmgCar .av {
+            position: absolute;
+            /* size of bullet elment */
+            width: 21px;
+            height: 21px;
+            background: url('../img/b05.png') no-repeat;
+            overflow: hidden;
+            cursor: pointer;
+        }
+        .cmgCar div { 
+            background-position: -5px -5px; 
+        }
+        .cmgCar div:hover, .cmgCar .av:hover { 
+            background-position: -95px -5px; 
+        }
+        .cmgCar .av { 
+            background-position: -35px -5px; 
+        }
+        .cmgCar .dn, .cmgCar .dn:hover {
+         background-position: -35px -5px; 
+     }

@@ -1,16 +1,15 @@
 .header-logo{
 	float: left;
-	padding-right: 15px;
+	position: relative;
+	z-index: 2;
 }
 .header-content{
-	/*border-bottom: 2px solid #DA7434;*/
-    padding-bottom: 10px;
-    display: inline-block;
-    width: 100%;
+	display: inline-block;
+	width: 100%;
 }
 
 .header-branding-logo{
-	max-width: 120px;
+	max-width: 110px;
 }
 
 .header-branding{
@@ -36,4 +35,19 @@
 }
 .header-info-email span{
 font-size: 18px;
+}
+#header{
+  background-color: azure;
+  -moz-box-shadow: inset 0 1px 0 #2A2A2A;
+  -webkit-box-shadow: inset 0 1px 0 #2A2A2A;
+  box-shadow: inset 0 1px 0 #2A2A2A;
+  background-color: #1d2023;
+  background: url(../img/bg.jpg) repeat scroll 0 0 transparent;
+  border-bottom: 3px solid #D87533;
+}
+.header-normal{
+  padding-top: 8px;
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
 }
