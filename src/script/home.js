@@ -1,4 +1,4 @@
-
+/*
 cmg.cmgHome = {
 	carousel : {	
 				options : {
@@ -17,7 +17,12 @@ cmg.cmgHome = {
 				installedCarousels : [],
 
 				responsiveCarousel :    function (carousel) {
+					debugger;
                 	var refSize = carousel.$Elmt.parentNode.clientWidth;
+                	refSize = parseFloat(window.getComputedStyle(carousel.$Elmt.parentNode).width) - 
+                	(parseFloat(window.getComputedStyle(carousel.$Elmt.parentNode).paddingLeft) + 
+                	parseFloat(window.getComputedStyle(carousel.$Elmt.parentNode).paddingRight));
+                	
                 	if (refSize) {
                     	refSize = Math.min(refSize, 1920);
                     	carousel.$ScaleWidth(refSize);
@@ -31,4 +36,4 @@ cmg.cmgHome = {
             
 			}
 }        
-        
+        */

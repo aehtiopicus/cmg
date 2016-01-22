@@ -1,44 +1,67 @@
 <script src="../script/home.js"></script>
 <link rel="stylesheet" type="text/css" href="../css/home.css">
+
 <script>
     jQuery(document).ready(function ($) {
-    	//returns the installed carousel
-    	var cr = cmg.cmgHome.carousel.carouselInstall('homeCarrousel1');
-    	cmg.cmgHome.carousel.responsiveCarousel(cr);
-		(function(){
-	    
-	    var callFunction =  function(){cmg.cmgHome.carousel.responsiveCarousel(cr)};
-	     if (window['addEventListener']) {
-	     	/*window[pm.callback ? 'addEventListener' : 'removeEventListener']('message', pm.aCallBack, !1);*/
-	           	window['addEventListener']('load',callFunction, !1);
-				window['addEventListener']('resize', callFunction, !1);
-	        	window['addEventListener']('orientationchange', callFunction, !1);	           
-	       } else {
-/*	           window[pm.callback ? 'attachEvent' : 'detachEvent']('onmessage', pm.aCallBack);*/				
-				window['attachEvent']('onresize',callFunction, !1);
-	            window['attachEvent']('onload', callFunction, !1);
-	            window['attachEvent']('onorientationchange', callFunction, !1);	  
+    	 $('.cmgHomeCarousel').on('fotorama:ready',function(a,b,c){    	 	
+    	 }).fotorama({
+    	 	autoplay : 2500,    	 	
+    	 	loop : true
 
-	       }
-	  })();
+    	 });
     });
 </script>
-
-<div id="homeCarrousel1" style="position: relative; margin: 0 auto; top: 0px; left: 0px; width: 1300px; height: 400px; overflow: hidden; visibility: hidden;">
-	<div u="loading" style="position: absolute; top: 0px; left: 0px;">
-        <!-- your loading screen content here -->
-        loading
-    </div>
-    <!-- Slides Container -->
-    <div u="slides" style="cursor: default; position: relative; top: 0px; left: 0px; width: 1300px; height: 400px; overflow: hidden;">
-        <div><img u="image" src="../img/carousel/lentes.png" /></div>
-        <div><img u="image" src="../img/carousel/descuentos.png" /></div>
-        <div><img u="image" src="../img/carousel/hermano-2684105.jpg" /></div>
-        <div><img u="image" src="../img/carousel/hqdefault.jpg" /></div>
-
-    </div>
-    <div data-u="navigator" class="cmgCar" style="bottom:16px;right:16px;" data-autocenter="1">
-            <!-- bullet navigator item prototype -->
-            <div data-u="prototype" style="width:21px;height:21px;"></div>
-        </div>   
+<div style="height:20px "></div>
+<div class="cmgHomeCarousel">
+        	
+        	
+        	<img  src="../img/carousel/hermano-2684105.jpg" />
+        	<img  src="../img/carousel/hqdefault.jpg" />
+        	<div data-img="../img/logocmg2.jpg"><strong>Two</strong></div>
+        	<img  src="../img/carousel/hermano-2684105.jpg" />
+        	<img  src="../img/carousel/hqdefault.jpg" />
+        	<div data-img="../img/logocmg2.jpg"><strong>Two</strong></div>
+        	<img  src="../img/carousel/hermano-2684105.jpg" />
+        	<img  src="../img/carousel/hqdefault.jpg" />
+        	<div data-img="../img/logocmg2.jpg"><strong>Two</strong></div>
 </div>
+<div class="textContainer">
+<p>
+	<span>
+	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus nunc lacus, volutpat non magna quis, dapibus lobortis nunc. Donec et leo aliquam, blandit orci sit amet, pharetra elit. Duis sed sagittis ante. Quisque sit amet consectetur risus, vel congue arcu. Vivamus ac massa massa. Cras bibendum urna at libero ullamcorper interdum. Duis placerat faucibus suscipit. Morbi nec diam consequat, pretium nisl sagittis, gravida magna. Sed in pulvinar mauris. Pellentesque sit amet nisi ante. Donec et fermentum purus, sit amet sollicitudin nunc. Aenean tellus lectus, scelerisque vel pharetra at, scelerisque id ligula.
+</span>
+</p>
+<p>
+	<span >
+Morbi eu sapien quis ante accumsan vehicula nec ac dolor. Phasellus efficitur felis ut tincidunt feugiat. Ut efficitur libero elit. Nulla ac purus imperdiet, dapibus lectus sit amet, elementum neque. Nulla imperdiet nulla sed nibh varius rhoncus a ut erat. Cras semper vulputate ipsum, vitae euismod nisl sodales convallis. Phasellus imperdiet efficitur nulla pretium elementum. Curabitur eget tellus vitae arcu tristique convallis sit amet vitae tortor. Fusce vel sollicitudin tortor. Vestibulum ac pellentesque magna. Duis interdum lorem velit, quis condimentum neque sollicitudin sit amet. Nulla arcu neque, porta cursus odio ac, commodo maximus risus.
+</span>
+</p>
+</div>    
+ 
+		
+<style>
+      #map {
+        width: 100%;
+        height: 250px;
+        display: inline-block;
+        background-color: #CCC;
+      }
+</style>
+		<div class="textContainer">
+			<div id="map"></div>
+		</div>
+		 <script src="https://maps.googleapis.com/maps/api/js?callback=initMap"async defer></script>
+         <script type="text/javascript">function initMap() {
+ 			var mapDiv = document.getElementById('map');
+    		var map = new google.maps.Map(mapDiv, {
+      			center: {lat: -32.935089, lng: -68.770857},
+      			zoom: 15
+    		});
+
+    		var marker = new google.maps.Marker({
+            	position: new google.maps.LatLng(-32.935271, -68.770129),
+            	icon: "../img/rsz_logocmg.png",
+            	map: map
+          });
+
+         }</script>

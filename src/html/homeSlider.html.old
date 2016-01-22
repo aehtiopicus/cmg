@@ -1,0 +1,50 @@
+<script src="../script/home.js"></script>
+<link rel="stylesheet" type="text/css" href="../css/home.css">
+<script>
+    jQuery(document).ready(function ($) {
+    	//returns the installed carousel
+    	var cr = cmg.cmgHome.carousel.carouselInstall('homeCarrousel1');
+    	cmg.cmgHome.carousel.responsiveCarousel(cr);
+		(function(){
+	    
+	    var callFunction =  function(){cmg.cmgHome.carousel.responsiveCarousel(cr)};
+	     if (window['addEventListener']) {
+	     	/*window[pm.callback ? 'addEventListener' : 'removeEventListener']('message', pm.aCallBack, !1);*/
+	           	window['addEventListener']('load',callFunction, !1);
+				window['addEventListener']('resize', callFunction, !1);
+	        	window['addEventListener']('orientationchange', callFunction, !1);	           
+	       } else {
+/*	           window[pm.callback ? 'attachEvent' : 'detachEvent']('onmessage', pm.aCallBack);*/				
+				window['attachEvent']('onresize',callFunction, !1);
+	            window['attachEvent']('onload', callFunction, !1);
+	            window['attachEvent']('onorientationchange', callFunction, !1);	  
+
+	       }
+	  })();
+    });
+</script>
+<div style="padding-left: 100px; padding-right: 100px">
+	<div id="homeCarrousel1" style="position: relative; margin: 0 auto; top: 0px; left: 0px; width: 1366px; height: 500px; overflow: hidden; 	visibility: hidden; display:inline-block;">
+		<div u="loading" style="position: absolute; top: 0px; left: 0px;">
+        <!-- your loading screen content here -->
+        	loading
+    	</div>
+    <!-- Slides Container -->
+    	<div u="slides" style="cursor: default; position: relative; top: 0px; left: 0px; width: 1366px; height: 500px; overflow: hidden;">
+        	<div>
+        		<img u="image" src="../img/carousel/lentes.png" />
+        		<div>
+        			<img u="image" src="../img/carousel/lentes.png" />
+        		</div>
+        	</div>
+        	<div><img u="image" src="../img/carousel/descuentos.png" /></div>
+        	<div><img u="image" src="../img/carousel/hermano-2684105.jpg" /></div>
+        	<div><img u="image" src="../img/carousel/hqdefault.jpg" /></div>
+
+    	</div>
+    	<div data-u="navigator" class="cmgCar" style="bottom:16px;right:16px;" data-autocenter="1">
+            <!-- bullet navigator item prototype -->
+            	<div data-u="prototype" style="width:21px;height:21px;"></div>
+        </div>   
+	</div>
+</div>
