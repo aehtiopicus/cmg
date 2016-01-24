@@ -1,0 +1,7 @@
+      #map {
+        width: 50%;
+        height: 250px;
+        display: inline-block;
+        background-color: #CCC;
+        padding: 10px;
+      }
