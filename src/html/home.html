@@ -3,8 +3,11 @@
 
 <script>
     jQuery(document).ready(function ($) {
-    	 $('.cmgHomeCarousel').on('fotorama:ready',function(a,b,c){    	 	
-    	 }).fotorama({
+    	 $('.cmgHomeCarousel').on('fotorama:stopautoplay',function(a,b,c){  
+         $(this).data().fotorama.startAutoplay(2500);
+    	 }).on('fotorama:startautoplay',function(a,b,c){
+            
+         }).fotorama({
     	 	autoplay : 2500,    	 	
     	 	loop : true
 
@@ -25,17 +28,19 @@
         	<img  src="../img/carousel/hqdefault.jpg" />
         	<div data-img="../img/logocmg2.jpg"><strong>Two</strong></div>
 </div>
-<div class="textContainer">
-<p>
-	<span>
+<div class="container">
+    <div class="textContainer">
+        <p>
+	       <span>
 	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus nunc lacus, volutpat non magna quis, dapibus lobortis nunc. Donec et leo aliquam, blandit orci sit amet, pharetra elit. Duis sed sagittis ante. Quisque sit amet consectetur risus, vel congue arcu. Vivamus ac massa massa. Cras bibendum urna at libero ullamcorper interdum. Duis placerat faucibus suscipit. Morbi nec diam consequat, pretium nisl sagittis, gravida magna. Sed in pulvinar mauris. Pellentesque sit amet nisi ante. Donec et fermentum purus, sit amet sollicitudin nunc. Aenean tellus lectus, scelerisque vel pharetra at, scelerisque id ligula.
-</span>
-</p>
-<p>
-	<span >
+            </span>
+        </p>
+        <p>
+	       <span >
 Morbi eu sapien quis ante accumsan vehicula nec ac dolor. Phasellus efficitur felis ut tincidunt feugiat. Ut efficitur libero elit. Nulla ac purus imperdiet, dapibus lectus sit amet, elementum neque. Nulla imperdiet nulla sed nibh varius rhoncus a ut erat. Cras semper vulputate ipsum, vitae euismod nisl sodales convallis. Phasellus imperdiet efficitur nulla pretium elementum. Curabitur eget tellus vitae arcu tristique convallis sit amet vitae tortor. Fusce vel sollicitudin tortor. Vestibulum ac pellentesque magna. Duis interdum lorem velit, quis condimentum neque sollicitudin sit amet. Nulla arcu neque, porta cursus odio ac, commodo maximus risus.
-</span>
-</p>
-</div>    
+            </span>
+        </p>
+    </div>    
+</div>
  
 		

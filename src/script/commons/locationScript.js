@@ -4,8 +4,8 @@ var cmg = {
 			prevLocation : location.href,
 			changeBody : changeBody,
 			hashName : location.hash.substring(1),	
-			locationChange : function(){
-				if(sp.prevLocation !== location.href){
+			locationChange : function(){				
+				if(location.hash.substring(1) !== "location" &&sp.prevLocation !== location.href){
 					sp.prevLocation = location.href;
 					sp.hashName = location.hash.substring(1);			
 					if(sp.hashName.length == 0){
