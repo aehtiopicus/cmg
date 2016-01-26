@@ -1,6 +1,8 @@
 <link rel="stylesheet" type="text/css" href="../css/header.css">
 <link rel="stylesheet" type="text/css" href="../css/menu.css">
+<link rel="stylesheet" type="text/css" href="../css/contacto.css">
 <script src="../script/menu.js"></script>
+<script src="../script/contacto.js"></script>
 <div class="header-normal">
 	<div class="header-wrap">
 		<div class="header-content">
@@ -22,13 +24,40 @@
 			<div id='cssmenu'>			
 				<ul>
    					<li class='active'><a href='#' id="home">Home</a></li>   				
+   					<li><a href='#empresa'>Empresa</a></li>
    					<li><a href='#productos'>Productos</a></li>
    					<li><a href='#clientes'>Clientes</a></li>
-   					<li><a href='#location'>Ubicaci&oacute;n</a></li>
-   					<li><a href='#empresa'>Empresa</a></li>
-   					<li><a href='#contact'>Contacto</a></li>
+   					<li><a href='#location'>Ubicaci&oacute;n</a></li>   					
+   					<li><a onclick="cmg.contacto.openModal()" style="cursor: pointer;">Contacto</a></li>
+   					<li>
+   						<div class="social">
+   							<i class="fa fa-facebook-square fa-2x cmgColor">&nbsp;</i>
+   							<i class="fa fa-google-plus-square fa-2x cmgColor ib" >&nbsp;</i>
+   						</div>
+   					</li>
 				</ul>
 			</div>
 		</div>
 	</div>
 </div>
+
+<div id="contacto" class="modal"
+    	 tabindex="-1" role="dialog" aria-labelledby="contactoTitle" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+     	<div class="modal-dialog modal-lg">
+			<div class="modal-content">
+				<div class="modal-header">
+		        	<button id="contactoClose" type="button" class="close" aria-label="Close" onclick="cmg.contacto.closeModal()"><span aria-hidden="true">&times;</span></button>
+		        	<h4 class="modal-title" id="contactoTitle">Contactenos</h4>
+	        	</div>
+				<div class="modal-body">
+					<div id="pageContainer">
+					
+					</div>				
+				</div>
+			</div>
+		</div>
+</div> 
+<script>
+cmg.contactInit.initializeInstance({popUpId : "contacto", pageContainer : "pageContainer"});
+cmg.contacto = cmg.contactInit.getInstance();
+</script>
