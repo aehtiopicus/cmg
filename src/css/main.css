@@ -34,3 +34,15 @@
 .cmgColor{
     color: #D77536;
 }
+button.btn.cmgColor,
+textarea:focus,
+input:focus { 
+    outline: none !important;
+    border-color: #D77536 !important;
+    box-shadow: 0 0 2px #D77536 !important;
+}
+
+button.btn.cmgColor{
+    background-color: #D77536;
+    color : #EEEEEE;    
+}

@@ -1,0 +1,33 @@
+    #pageContainer div.contactorContainer{
+    	max-height: 80%;
+    	overflow: auto;
+    	padding-bottom: 2px;
+    }
+
+ 	#pageContainer div.contactorContainer textarea,
+    #pageContainer div.contactorContainer input{
+    	margin-bottom: 5px;
+    	margin-top: 5px;
+    }
+    .buttonBar{
+   	    position: absolute;
+	    top: 86%;
+    	border-top: 1px solid #D77536;
+    	width: 97%;
+    	padding-top: 10px;
+    	text-align: -webkit-center;
+    	text-align: center;
+    	text-align: -moz-center;
+    }
+
+    div#contacto .modal-header{
+    	border-bottom: 1px solid #D77536;
+    	    margin-left: 15px;
+    margin-right: 13px;
+    }
+    div#contacto .modal-header .close{
+    	opacity: inherit;
+    	color: #D77536;
+    }
+
+   

@@ -51,7 +51,24 @@
 	        	</div>
 				<div class="modal-body">
 					<div id="pageContainer">
-					
+						<form method="post" id="formPost" action="https://script.google.com/macros/s/AKfycbwrDeg8sJbrSGeFfED5BKcy9livNvCz1Qy2gtA0v9qxuPh2Qw4/exec">
+						<div>
+							<div class = "contactorContainer">
+								<div>Nombre:</div>
+								<div><input type="text" name="nombre" class="form-control"></div>
+								<div>Telefono:</div>
+								<div><input type="text" name="telefono" class="form-control"></div>
+								<div>Email:</div>
+								<div><input type="email" name="email" class="form-control" required></div>
+								<div>Mensaje:</div>
+								<div><textarea class="form-control" name="mensaje" rows="5" ></textarea ></div>
+							</div>
+							<div class="buttonBar">
+								<button class="btn btn-default cmgColor" onclick="$('#formPost').post()">Enviar</button>
+
+							</div>
+						</div>
+					</form>
 					</div>				
 				</div>
 			</div>
@@ -61,3 +78,4 @@
 cmg.contactInit.initializeInstance({popUpId : "contacto", pageContainer : "pageContainer"});
 cmg.contacto = cmg.contactInit.getInstance();
 </script>
+
