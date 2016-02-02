@@ -1,0 +1,41 @@
+<link rel="stylesheet" type="text/css" href="../css/contacto.css">
+<script src="../script/contacto.js"></script>
+<div id="contacto" class="modal"
+	tabindex="-1" role="dialog" aria-labelledby="contactoTitle" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+	<div class="modal-dialog modal-lg">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button id="contactoClose" type="button" class="close" aria-label="Close" onclick="cmg.contacto.closeModal()"><span aria-hidden="true">&times;</span></button>
+				<img src="../img/logocmg.png" class="header-branding-logo-2">
+				<h5 class="modal-title" id="contactoTitle" style="display:inline;">Dejenos su mensaje para contactarnos.</h5>
+			</div>
+			<div class="modal-body">
+				<div id="pageContainer">
+					<form method="post" id="formPost">
+						<div>
+							<div class = "contactorContainer">
+								<div>Nombre:</div>
+								<div><input type="text" id="nombre" name="nombre" class="form-control" min="0" max="100" required></div>
+								<div>Telefono:</div>
+								<div><input type="number" id="telefono" name="telefono" class="form-control" required></div>
+								<div>Email:</div>
+								<div><input type="email" id="email" name="email" class="form-control" min="0" max="30"required></div>
+								<div>Mensaje:</div>
+								<div><textarea class="form-control" id="mensaje" name="mensaje" rows="5" min="0" max="1000" required></textarea ></div>
+								<input type="hidden" name="toemail" value="jvega@nuskin.com"/>
+							</div>							
+						</div>
+					</form>
+					<div class="buttonBar">
+						<button class="btn btn-default cmgColor" onclick="cmg.contacto.sendEmail('formPost')">Enviar</button>
+
+					</div>
+				</div>				
+			</div>
+		</div>
+	</div>
+</div> 
+<script>
+cmg.contactInit.initializeInstance({popUpId : "contacto", pageContainer : "pageContainer"});
+cmg.contacto = cmg.contactInit.getInstance();
+</script>

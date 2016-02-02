@@ -1,15 +1,13 @@
 <link rel="stylesheet" type="text/css" href="../css/header.css">
 <link rel="stylesheet" type="text/css" href="../css/menu.css">
-<link rel="stylesheet" type="text/css" href="../css/contacto.css">
 <script src="../script/menu.js"></script>
-<script src="../script/contacto.js"></script>
 <div class="header-normal">
 	<div class="header-wrap">
 		<div class="header-content">
 			<div class="header-logo">
 				<img src="../img/logocmg.png" class="header-branding-logo" onclick="javascript: cmg.locationScript.home()">
 			</div>
-		
+
 			<!-- div  class="header-info">
 								
 					<div class="header-info-phone">
@@ -19,63 +17,19 @@
 						<i class="fa fa-envelope-o fa-2x" >&nbsp;</i><span>ventas@cmgsrl.com.ar</span>
 					</div>
 			
-			</div -->
-		
-			<div id='cssmenu'>			
-				<ul>
-   					<li class='active'><a href='#' id="home">Home</a></li>   				
-   					<li><a href='#empresa'>Empresa</a></li>
-   					<li><a href='#productos'>Productos</a></li>
-   					<li><a href='#clientes'>Clientes</a></li>
-   					<li><a href='#location'>Ubicaci&oacute;n</a></li>   					
-   					<li><a onclick="cmg.contacto.openModal()" style="cursor: pointer;">Contacto</a></li>
-   					<li>
-   						<div class="social">
-   							<i class="fa fa-facebook-square fa-2x cmgColor">&nbsp;</i>
-   							<i class="fa fa-google-plus-square fa-2x cmgColor ib" >&nbsp;</i>
-   						</div>
-   					</li>
-				</ul>
-			</div>
-		</div>
-	</div>
-</div>
+				</div -->
 
-<div id="contacto" class="modal"
-    	 tabindex="-1" role="dialog" aria-labelledby="contactoTitle" aria-hidden="true" data-backdrop="static" data-keyboard="false">
-     	<div class="modal-dialog modal-lg">
-			<div class="modal-content">
-				<div class="modal-header">
-		        	<button id="contactoClose" type="button" class="close" aria-label="Close" onclick="cmg.contacto.closeModal()"><span aria-hidden="true">&times;</span></button>
-		        	<h4 class="modal-title" id="contactoTitle">Contactenos</h4>
-	        	</div>
-				<div class="modal-body">
-					<div id="pageContainer">
-						<form method="post" id="formPost" action="https://script.google.com/macros/s/AKfycbwrDeg8sJbrSGeFfED5BKcy9livNvCz1Qy2gtA0v9qxuPh2Qw4/exec">
-						<div>
-							<div class = "contactorContainer">
-								<div>Nombre:</div>
-								<div><input type="text" name="nombre" class="form-control"></div>
-								<div>Telefono:</div>
-								<div><input type="text" name="telefono" class="form-control"></div>
-								<div>Email:</div>
-								<div><input type="email" name="email" class="form-control" required></div>
-								<div>Mensaje:</div>
-								<div><textarea class="form-control" name="mensaje" rows="5" ></textarea ></div>
-							</div>
-							<div class="buttonBar">
-								<button class="btn btn-default cmgColor" onclick="$('#formPost').post()">Enviar</button>
-
-							</div>
-						</div>
-					</form>
-					</div>				
+				<div id='cssmenu'>			
+					<ul>
+						<li class='active'><a href='#' id="home">Home</a></li>   				
+						<li><a href='#empresa'>Empresa</a></li>
+						<li><a href='#productos'>Productos</a></li>
+						<li><a href='#clientes'>Clientes</a></li>
+						<li><a onclick='javascript : document.body.scrollTop = 10000' style="cursor: pointer;">Ubicaci&oacute;n</a></li>   		
+						<li><a onclick="cmg.contacto.openModal()" style="cursor: pointer;">Contacto</a></li>
+					</ul>
 				</div>
 			</div>
 		</div>
-</div> 
-<script>
-cmg.contactInit.initializeInstance({popUpId : "contacto", pageContainer : "pageContainer"});
-cmg.contacto = cmg.contactInit.getInstance();
-</script>
+	</div>	
 

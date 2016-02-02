@@ -46,3 +46,42 @@ button.btn.cmgColor{
     background-color: #D77536;
     color : #EEEEEE;    
 }
+
+.spinnerDiv{
+      position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1051;
+}
+.spinner{
+    position: fixed;
+    margin:  auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 9.5em;
+    height: 9.5em;
+}
+
+/* Scroll */
+.scrollup{
+    width:40px;
+    height:40px;
+    opacity:0.3;
+    position:fixed;
+    bottom:85px;
+    right:25px;
+    display:none;
+    background: url(../img/icon_top.png) no-repeat;
+    z-index:2;
+}
+.ib-100{
+    display: inline-block;
+    width: 100%;
+}
+#cmgbody{
+    padding-top : 84px;
+}

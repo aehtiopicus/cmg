@@ -9,54 +9,80 @@
       	padding-left: 50px;      	
       }
       .icon{
-      	    vertical-align: top;
-      	    width: 5px;
-      }
-      .contactInfoContainer h3{
-      	margin-top: inherit;
-      	letter-spacing: 5px;
-      	font-weight: bolder;
-      	margin-bottom: 13px;
-      }
-      .contactInfoContainer div.srl{
-      	transform: rotate(270deg);
-      	transform-origin: left top 0;
-      	position: relative;
-      	display: inline-block;
-      	left: 205px;
-      	text-transform: capitalize;
-      	font-size: 10px;
-      }
-      .contactInfoContainer ul{
-      	list-style-type: none;
-      }
-      .contactInfoContainer .dirDiv{
-      	    padding-bottom: 0px;
-      	    padding-top: 7px;
-      	    color: #5C6161;
-      	    font-weight: 600;
-      }
-      .footerLine{
-      	    border-top: 1px solid #DB7432;
-    padding-top: 22px;
-      }
+       vertical-align: top;
+       width: 5px;
+     }
+     .contactInfoContainer h3{
+       margin-top: inherit;
+       letter-spacing: 5px;
+       font-weight: bolder;
+       margin-bottom: 13px;
+     }
+     .contactInfoContainer div.srl{
+       transform: rotate(270deg);
+       transform-origin: left top 0;
+       position: relative;
+       display: inline-block;
+       left: 205px;
+       text-transform: capitalize;
+       font-size: 10px;
+     }
+     .contactInfoContainer ul{
+       list-style-type: none;
+     }
+     .contactInfoContainer .dirDiv{
+       padding-bottom: 0px;
+       padding-top: 7px;
+       color: #5C6161;
+       font-weight: 600;
+     }
+     .footerLine{
+       border-top: 1px solid #DB7432;
+       padding-top: 22px;
+     }
 
-      #author{
-      	 background-color: azure;
-  -moz-box-shadow: inset 0 1px 0 #2A2A2A;
-  -webkit-box-shadow: inset 0 1px 0 #2A2A2A;
-  box-shadow: inset 0 1px 0 #2A2A2A;
-  background-color: #1d2023;
-  background: url(../img/bg.jpg) repeat scroll 0 0 transparent;
-  		border-top: 3px solid #D87533;
-  		height: 50px;
-      }
-      #author div{
-      	    display: inline-block;
-    color: #EEEEEE;
-    width: 100%;
-    text-align: -webkit-center;
-    text-align: center;
-    text-align: -moz-center;
-    margin-top: 14px;
-      }
+     #footerDiv{
+      background-color: azure;
+      -moz-box-shadow: inset 0 1px 0 #2A2A2A;
+      -webkit-box-shadow: inset 0 1px 0 #2A2A2A;
+      box-shadow: inset 0 1px 0 #2A2A2A;
+      background-color: #1d2023;
+      background: url(../img/bg.jpg) repeat scroll 0 0 transparent;
+      border-top: 3px solid #D87533;
+      height: 80px;
+    }
+    #footerDiv div{
+
+      color: #EEEEEE;
+
+    }
+    #footerDiv .fcontainer{
+      width: 950px;
+      margin: auto;
+      margin-top: 17px;
+    }
+    .socialnet{
+      width: 40px;
+      height: 37px;       
+      display: inline-block;
+    }
+    .socialnet:hover{
+      cursor: pointer;
+    }
+     .socialnet.mailto{
+      background: url(../img/sprite.png) 0px -1px no-repeat;
+    }
+    .socialnet.facebook{
+      background: url(../img/sprite.png) -277px -1px no-repeat;
+    }
+    .socialnet.google{
+      background: url(../img/sprite.png) -118px -1px no-repeat;
+    }
+    .socialnet-container{
+      display: inline-block;
+      vertical-align: middle;
+      float: right;
+    }
+    .footer-branding-logo{
+      max-width: 70px;
+    }

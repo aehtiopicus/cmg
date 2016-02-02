@@ -3,52 +3,63 @@
 <a name="location"></a>
 <div class="container footerLine">
 	<div class="ib">
-			<div id="map"></div>
-			<div class = "contactInfoContainer">
-				<div>
-					<h3 class="cmgColor">F&aacute;brica y Oficinas</h3>
-					<div class="dirDiv ">
-						<div class="ib icon">
-							<i class ="fa fa-map-marker fa-2x cmgColor">&nbsp;</i>
-						</div>
-						<div class="ib">
-							<ul>
-								<li>San Francisco del Monte y C. Pescara.</li>
-								<li>Zona Industrial - Rodeo de la Cruz.</li>
-								<li>5525 - Guaymall&eacute;n - Mendoza</li>
-							</ul>
-						</div>						
+		<div id="map"></div>
+		<div class = "contactInfoContainer">
+			<div>
+				<h3 class="cmgColor">F&aacute;brica y Oficinas</h3>
+				<div class="dirDiv ">
+					<div class="ib icon">
+						<i class ="fa fa-map-marker fa-2x cmgColor">&nbsp;</i>
 					</div>
-					<div class="dirDiv">
-						<div class="ib icon">
-							<i class="fa fa-phone fa-2x cmgColor" >&nbsp;</i>
-						</div>
-						<div class="ib">
-							<ul>
-								<li>TEL/Fax : 0261 - 4930243 - 4978194</li>
-								<li>TEL : 0261 - 4979203</li>
-								<li>NEXTEL : 149*3119</li>
-							</ul>
-						</div>						
-					</div>
-					<div class="dirDiv">
-						<div class="ib icon">
-							<i class="fa fa-envelope-o fa-2x cmgColor" >&nbsp;</i>
-						</div>
-						<div class="ib">
-							<ul>
-								<li>General : <a class="cmgColor" href="mailto:cmg@cmgsrl.com.ar">cmg@cmgsrl.com.ar</a></li>
-								<li>Ventas : <a class="cmgColor" href="ventas@cmgsrl.com.ar">ventas@cmgsrl.com.ar</a></li>
-							</ul>
-						</div>		
-					</div>													
-					
+					<div class="ib">
+						<ul>
+							<li>San Francisco del Monte y C. Pescara.</li>
+							<li>Zona Industrial - Rodeo de la Cruz.</li>
+							<li>5525 - Guaymall&eacute;n - Mendoza</li>
+						</ul>
+					</div>						
 				</div>
+				<div class="dirDiv">
+					<div class="ib icon">
+						<i class="fa fa-phone fa-2x cmgColor" >&nbsp;</i>
+					</div>
+					<div class="ib">
+						<ul>
+							<li>TEL/Fax : 0261 - 4930243 - 4978194</li>
+							<li>TEL : 0261 - 4979203</li>
+							<li>NEXTEL : 149*3119</li>
+						</ul>
+					</div>						
+				</div>
+				<div class="dirDiv">
+					<div class="ib icon">
+						<i class="fa fa-envelope-o fa-2x cmgColor" >&nbsp;</i>
+					</div>
+					<div class="ib">
+						<ul>
+							<li>General : <a class="cmgColor" href="mailto:cmg@cmgsrl.com.ar">cmg@cmgsrl.com.ar</a></li>
+							<li>Ventas : <a class="cmgColor" href="ventas@cmgsrl.com.ar">ventas@cmgsrl.com.ar</a></li>
+						</ul>
+					</div>		
+				</div>													
+
 			</div>
+		</div>
 	</div>
 </div>
-<div id="author">	
-	<div style="display:inline-block; color: red, width:100%;">Two Mad Cows 2016</div>
+<div id="footerDiv">	
+	<div class="ib-100">
+	<div class="fcontainer">
+	<img src="../img/logocmg.png" class="footer-branding-logo" onclick="javascript: cmg.locationScript.home()">
+	<div class="socialnet-container">
+		<div class="socialnet mailto" onclick="javascript :cmg.contacto.openModal()"></div>
+		<div class="socialnet facebook" onclick="javascript : window.open('https://www.facebook.com/people/Cmg-Srl-Envases-Corrugados/100009573980301','_blank')"></div>
+		<div class="socialnet google" onclick="javascript : window.open('http://google.com/+CmgSRLBuenaNueva','_blank');"></div>		
+	</div>
+	<p style="margin: auto;/* position: absolute; */text-align: center;top: 10px;margin-top: -30px;">Two Mad Cows 2016</p>
+</div>
+</div>
+
 </div>
 <script src="https://maps.googleapis.com/maps/api/js?callback=cmg.footer.initMap"async defer></script>
 
